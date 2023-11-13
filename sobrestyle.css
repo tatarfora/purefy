@@ -1,0 +1,369 @@
+/** O PROJETO A SEGUIR FOI DESENVOLVIDO COM MUITA AJUDA DO YOUTUBE, DO W3SCHOOLS, CODEACADEMY E DE PERGUNTAS À COLEGAS DE OUTRAS INSTITUIÇÕES **/
+
+/**INÍCIO DO BODY**/
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+/**FIM DO BODY**/
+
+/** INÍCIO DA NAVEGAÇÃO   /   COPIAR EM TODAS AS PÁGINAS ESSE CSS **/ 
+
+.logo{
+    position: absolute;
+    left:10%;
+    top:1%;
+    float:left; 
+}
+
+.logo img{
+    size: 5%;
+}
+
+ul {
+    margin: 0 auto ;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; 
+    margin-top: 0;
+    max-width: 600px;
+  }
+  
+  @media screen and (min-width: 600px) {
+      ul {
+          flex-direction: row;
+      }
+  }
+  
+  li {
+    position: relative;
+    padding: 15px;
+  }
+  
+  .navlink {
+    color: #2c2c2c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .25em;
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+  }
+  
+   .navlink:hover::after {
+    width: 100%;
+    right: 0;
+  }
+  
+   .navlink::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(to left, #a7caff, #012d5e 100%);
+    transition: width .5s ease 0s, right .5s ease 0s;
+    width: 0;
+}
+
+/**   FIM DA NAVEGAÇÃO /  COPIAR EM TODAS AS PÁGINAS ESSE CSS **/
+
+/**   LINHA DO TEMPO  **/
+
+* {
+    box-sizing: border-box;
+  }
+
+/** aqui é a linha vertical **/
+
+  .ideais {
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+  
+  .ideais::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #012d5e;
+    margin-top: 20px;
+    top: 20px;
+    bottom: -6%;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /** aqui é os balõezinhos **/
+
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0;
+    text-justify: auto;
+  }
+  
+  .container h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #012d5e;
+    margin-left: 6%;
+    width: 90%;
+  }
+
+  .container p{
+    font-size: 15px;
+    color: #012d5e;
+    font-weight: light;
+    line-height: 1.5;
+    text-align: justify;
+    margin-left: 6%;
+    width: 90%;
+  }
+
+  
+  .container b{
+    font-size: 18px;
+    color: #012d5e;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  /** aqui é são as bolinhas **/
+
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -14px;
+    background-color: white;
+    border: 2px solid #012d5e;
+    top: 15px;
+    border-radius: 100%;
+    z-index: 1;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+  
+  .right::after {
+    left: -16px;
+  }
+  
+  .content {
+    padding: 20px 30px;
+    background-color: #f0f0f0;
+    position: relative;
+    border-radius: 70px;
+  }
+
+  .missao{
+    position: inherit;
+    margin-left: 60%;
+    margin-top: -30%;
+    width: 300px;
+  }
+
+  .visao{
+    position: inherit;
+    margin-left: 10%;
+    margin-top: -30%;
+    width: 300px;
+    
+  }
+
+  .valores{
+    position: inherit;
+    margin-left: 60%;
+    margin-top: -25%;
+    width: 300px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .ideais::after {
+      left: 31px;
+    }
+
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent;
+    }
+
+    .left::after, .right::after {
+      left: 15px;
+    }
+
+    .right {
+      left: 0%;
+    }
+}
+
+/** FIM DA LINHA DO TEMPO **/
+
+/** BOX DO VÍDEO **/
+
+
+.video{
+    background-image:
+    linear-gradient(to top right, rgba(0, 74, 109, 0.63) 20%, rgba(9, 38, 82, 0.8) 80%),
+    url(https://i.imgur.com/TYkBz8U.png);
+    height: 70%;
+    align-content: center;
+}
+
+.video h1{ 
+    position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+}
+
+.video iframe{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-bottom: 50px;
+    margin-left: 27%;
+}
+
+@media screen and (max-width: 700px) {
+    .video iframe{
+      flex-direction: column;
+    }
+  }
+
+/** FIM DO VIDEO **/
+
+/** OS IDEALIZADORES **/
+
+.headeridealizador h1{
+    position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#012d5e;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 0;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 100;
+} 
+
+.idealizadores{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    .idealizadores {
+      flex-direction: column;
+    }
+  }
+
+  .selfies img{
+    border: none;
+    border-radius: 500px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .selfies {
+    width: 20%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 700px) {
+    .selfies {
+      flex-direction: column;
+      width: 60%;
+    }
+  }
+
+  .selfies p{
+    text-align: center;
+    margin-top: -10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: light;
+    font-size: 15px;
+    margin-top: 30px;
+    color:#012d5e;
+  }
+
+  .selfies h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: light;
+    margin-top: 30px;
+    color:#012d5e;
+  }
+
+
+/**FOOTER**/
+
+
+.footer{
+  color:#fff;
+  background-image:
+  linear-gradient(to top right, rgba(0, 74, 109, 0.63) 20%, rgba(9, 38, 82, 0.8) 80%),
+  url(https://i.imgur.com/TYkBz8U.png);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;;
+}
+
+.footerblock {
+  margin: 4%;
+}
+
+.nomeempresa h4{
+  font-size: 25px;
+  font-weight: 500;
+  padding-top: 20px;
+  margin-bottom: -20px;
+
+}
+
+.nomeempresa p{
+  font-size: 15px;
+  padding-bottom: 20px;
+  padding-top: -10px;
+}
+
+.copyright{
+  font-size: 10px;
+  padding-bottom: 10px;
+}
