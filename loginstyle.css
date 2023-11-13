@@ -38,9 +38,6 @@ ul {
       }
   }
 
-a {
-	text-decoration: none;
-}
   li {
     position: relative;
     padding: 15px;
@@ -146,6 +143,16 @@ span {
     margin-top: 15px;
     transition: all 0.5s ease-in-out;
 }
+
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  button {
+    text-decoration: none;
+  }
 
 .entrar {
     background: linear-gradient(to left, #2a62a0, #00152f 100%);
