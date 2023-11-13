@@ -37,7 +37,10 @@ ul {
           flex-direction: row;
       }
   }
-  
+
+a {
+	text-decoration: none;
+}
   li {
     position: relative;
     padding: 15px;
